@@ -1,0 +1,11 @@
+SELECT name, Account.Name, Account.Industry FROM Contact WHERE Account.Industry='Energy'
+
+select id, name, (select lastname, firstName from contacts) from account
+
+select name, annualrevenue, (select amount, name from Opportunities where stageName = 'Closed Won') from account where type='Customer - Direct'
+
+select Sum(Amount) From Opportunity where isClosed = false and probability > 60
+
+select leadsource, count(name) from lead group by leadsource
+
+select name, count(id) from account group by name having count(id) > 1
