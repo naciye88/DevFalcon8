@@ -18,6 +18,8 @@ public class SoqlDemo {
     System.debug('account name is '+ accName + 'phone is ' + accPhone);
     System.debug('account number is ' + acc.AccountNumber);
     }
+
+
     public static void accountSOQL_3(){
         List<account> listAcc = [Select name, phone, accountNumber from account order by CreatedDate DESC]; 
 
@@ -39,5 +41,4 @@ public class SoqlDemo {
         System.debug('filtered accounts '+ listAcc);
 
     }
-
 }
