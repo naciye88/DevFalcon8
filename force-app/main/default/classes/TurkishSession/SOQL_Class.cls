@@ -22,16 +22,12 @@ public class SOQL_Class {
     public static void contact_SOQL(){
         List<contact> example4 =[select id, homePhone, phone from contact where (homePhone = null) and (phone = null)];
         System.debug(example4);
-
-
     }
     
 // "account_SOQL_3" methodu ile: Account objesinde Annual Revenue'lerinin (boş olmayan) toplamını bulan bir method yazın ve debug mesajı ile görüntüleyin.
 public static void account_SOQL_3(){
     List<AggregateResult> example5 =[select SUM(AnnualRevenue) from account where AnnualRevenue != null ];
     System.debug(example5);
-
-
 }  
 
 

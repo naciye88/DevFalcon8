@@ -1,0 +1,2 @@
+salesforceproject_Assg.salesforceprojectinsert();
+salesforceproject_Assg.salesforceprojectupdate();

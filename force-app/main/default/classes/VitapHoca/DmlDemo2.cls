@@ -16,8 +16,7 @@ public class DmlDemo2 {
         Contact cnt = new Contact();
         cnt.LastName = 'Biden';
         cnt.AccountId =acc.Id;
-        insert c;
-
+        insert cnt;
     }
     public static void dmlInsertRelatedDemo_2(){
         Salesforce_Project__c sp =[select id, name from Salesforce_Project__c order by CreatedDate DESC limit 1];

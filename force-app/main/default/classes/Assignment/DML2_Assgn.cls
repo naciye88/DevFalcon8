@@ -5,11 +5,9 @@ public class DML2_Assgn {
         Account newRecord1 = new Account();
         newRecord1.name = 'Naciye' + 'Assignment';
         listAccount.add(newRecord1);
-
         Account newRecord2 = new Account();
         newRecord2.name = 'Ahmet' + 'Assignment';
         listAccount.add(newRecord2);
-
 
         Account newRecord3 = new Account();
         newRecord3.name = 'Omer' + 'Assignment';
@@ -17,7 +15,6 @@ public class DML2_Assgn {
 
         insert listAccount;
         System.debug(listAccount);
-    
     }
     public static void updating_dml(){
         List<account> newlistAccount = new List<account>(); 
@@ -26,11 +23,9 @@ public class DML2_Assgn {
     for (account eachAcc : updateAcc) {
     eachAcc.Name += ' updation';
     newlistAccount.add(eachAcc);
-    
 }
     if(!newlistAccount.isEmpty()){
     update newlistAccount;
- 
     }
     System.debug(newlistAccount);
     }

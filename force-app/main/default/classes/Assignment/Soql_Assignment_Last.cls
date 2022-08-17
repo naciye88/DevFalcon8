@@ -15,6 +15,7 @@ public class Soql_Assignment_Last {
             System.debug(eachEmpl + 'number of employees ');
         }
     }
+    
     public static void AccountFromCont(){
         List<Contact> ListContact =[Select Id, Name, Account.Id, Account.Name from Contact];
         for(Contact eachContact : ListContact) {

@@ -1,17 +1,16 @@
 public  class calculator2 {
-    public string printAndReturnMessage(string msg){
-        String result = msg + '....OK Cool';
-        //to return we use kewword 'return'
-        return result;
+    public static string printAndReturnMessage(string msg){
+    string r = msg + '....ok cool';
+    return r;
+    }
+    public static integer add(integer num1, integer num2){
+        integer sum = num1 + num2;
+        return sum;
 
     }
-    //same method name is okay but not same number of parameters or //exacly same data type
-    public integer add(integer num1, integer num2){
-integer sum = num1 + num2;
-return sum;
-    }
-    public integer add(integer num1, integer num2, decimal num3){
+
+    public static integer add(integer num1, integer num2, integer num3){
         integer sum = num1 + num2 + num3;
-        return sum;   
+        return sum;
     }
 }

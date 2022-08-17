@@ -1,13 +1,10 @@
 public class Primitivedata_Assignment {
-   public void PrimitiveDataMethods(){
+   public static void PrimitiveDataMethods(){
 ID id1= '0018Z00002eznnsQAA';
-system.debug(id1);
+string varString = ' the following Id belongs to Accouts';
+Boolean varBoolean = false;
 
-string newId = ' the following Id belongs to Accouts';
-system.debug(newId);
-
-Boolean Id2 = true;
-system.debug('The ID is ' + id1 +' ,'+  ' The String is ' + newId + ' ,' + ' The boolean is ' + Id2+ '.');
+system.debug('The ID is ' + id1 +' ,'+  ' The String is ' + varString + ' ,' + ' The boolean is ' + varBoolean + '.');
 
 
 

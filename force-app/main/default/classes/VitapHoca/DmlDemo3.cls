@@ -1,16 +1,18 @@
 public class DmlDemo3 {
     //update multiple accounts
-    public static void dmlMultipleRecordUpdate_righ() {
-        //add all the accounts which we want to update in this
-        List<account> updateAccount = new List<account>();
+    public static void dmlMultipleRecordUpdate_right() {
+        //add all the accounts which we want to update in this list
+        List<Account> updateAccounts = new List<Account>();
         //fetch all account
-        List<account> listAccount= [select name from Account];
+        List<Account> listAccount = [select name from Account];
         for (Account eachAccount : listAccount) {
-            eachAccount.Name+= 'via B.0'; //just example
-            updateAccount.add(eachAccount);
+            eachAccount.Name += ' via B.0'; //just an example
+            updateAccounts.add(eachAccount);
         }
-        if (!updateAccount.isEmpty()){
-            update updateAccount;
+
+        if (!updateAccounts.isEmpty()) {
+            update updateAccounts;
         }
     }
 }
+

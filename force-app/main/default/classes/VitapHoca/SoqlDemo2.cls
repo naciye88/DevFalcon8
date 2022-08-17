@@ -6,10 +6,8 @@ public class SoqlDemo2 {
             string accName = eachContact.account.name;
             system.debug('contact name is ' + eachContact.Name + ', its acc is ' + accName);
         }
-        
     }
 
-    
     public static void sampleSoql4() {
         list<account> accountWithOpps = [select name, annualrevenue, 
          (select amount, name from Opportunities where stageName = 'Closed Won')           
@@ -24,5 +22,6 @@ public class SoqlDemo2 {
             }
             system.debug('--------------');
         }
+
     }
 }
